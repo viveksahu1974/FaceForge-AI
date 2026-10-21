@@ -16,6 +16,8 @@ A local-first Python 3.10/3.11 + PyTorch face-analysis toolkit with five Gradio 
 
 The built-in geometric swap is a simple baseline, not high-quality deepfake generation. 3DDFA_V2 must be installed separately and may require building native extensions. Neural swapping requires appropriate model licensing and extra dependencies. Face matching and age prediction can be inaccurate; biometric gallery data is sensitive.
 
+**[▶ Interactive FaceForge UI preview](https://viveksahu1974.github.io/portfolio/faceforge-preview/)** · This is an interactive *visual walkthrough* of the five Gradio modules using an artificial mesh illustration. It is **not** a hosted ML backend and does not process real faces. To use actual detection, recognition, age estimation, 3D reconstruction or face swapping, follow the local Python installation instructions below.
+
 ## Windows 10/11 quick start (Python 3.11)
 
 Double-click `START_WINDOWS.bat`, or in VS Code PowerShell from the repository root run:
