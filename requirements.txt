@@ -1,0 +1,3 @@
+# Supported: Python 3.10 or Python 3.11
+# Install with: python -m pip install -r requirements.txt
+-e .

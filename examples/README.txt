@@ -1,0 +1,1 @@
+Place your own consented portraits and videos here. Example commands in README.md use person.jpg, source.jpg, target.jpg, query.jpg, and video.mp4; these are placeholders and are not included with the repository.

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faceforge-ai"
+version = "0.1.0"
+description = "Consent-first, PyTorch-powered 2D/3D face analysis and face swap demos"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+ "numpy==1.26.4",
+ "Pillow==10.2.0",
+ "torch==2.2.2",
+ "torchvision==0.17.2",
+ "facenet-pytorch==2.6.0",
+ "opencv-python==4.10.0.84",
+ "gradio==4.44.1",
+ "pydantic==2.10.6",
+ "fastapi==0.112.2",
+ "starlette==0.38.6",
+ "transformers>=4.40,<4.47",
+ "safetensors>=0.4,<1",
+ "huggingface-hub>=0.23,<0.26",
+]
+
+[project.optional-dependencies]
+neural = ["insightface==0.7.3", "onnxruntime>=1.17,<2", "cython>=0.29", "scikit-image>=0.22,<1", "scipy>=1.11,<2"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+faceforge = "faceforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["faceforge*"]
